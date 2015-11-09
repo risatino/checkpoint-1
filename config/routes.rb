@@ -2,9 +2,11 @@ Rails.application.routes.draw do
 
   get("/areas/square/:length_of_side", { :controller => "areas", :action => "square" })
 
+  get("/areas/rectangle/:width/:height", { :controller => "areas", :action => "rectangle" })
+
   get("/areas/circle/:radius", { :controller => "areas", :action => "circle" })
 
-  get("/areas/triangle/base/vertical_height", { :controller => "areas", :action => "triangle" })
+  get("/areas/triangle/:base/:vertical_height", { :controller => "areas", :action => "triangle" })
 
   get("/areas/trapezoid/:a/:b/:vertical_height", { :controller => "areas", :action => "trapezoid" })
 
